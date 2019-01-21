@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    padding: 150px;
+    background-image: url("large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 3200px;
+    float: center;
+}
+
+/* Header */
+.header{
+    height: 550px;
+    text-align: center;
+    background-image: url("img3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 550px;
+}
+.header h1{
+    text-align: center;
+    font-size: 150px;
+    line-height: 20px;
+    color: red;
+}
+
+/* top navigation */
+.topnav{
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+/* topnav links */
+.topnav a{
+    height: 50px;
+    float: left;
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* color on hover */
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.about{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+
+/* left column */
+.leftcolumn{
+    float: left;
+    width: 30%;
+    background-color: blueviolet;
+}
+.middlecolumn{
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+    background-color: blueviolet;
+}
+
+/* right column */
+.rightcolumn{
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+    background-color: blueviolet;
+}
+.about2{
+	width: 100%;
+	Height: 400px;
+}
+
+.fakeimage{
+    background-image: url("img7.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.image10{
+    background-image: url("img10.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* Add a card effect for articles */
+.card1 {
+  background-color: white;
+  height: 650px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card2 {
+  background-color: white;
+  height: 700px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card3 {
+  background-color: white;
+  height: 1370px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card4 {
+  background-color: white;
+  height: 750px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card5 {
+  background-color: white;
+  height: 600;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  height: 150px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
+/* Responsive layout  */
+@media screen and (max-width: 1000px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
